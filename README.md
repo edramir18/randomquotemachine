@@ -1,6 +1,8 @@
 # bootstraptemplate
 Template for Bootstrap 4, and JQuery 3.2
 
+Include custom color definition on main.css file
+
 How to add a ssh key to github
 
 Create the ssh key with the command

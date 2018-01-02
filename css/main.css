@@ -1,0 +1,11 @@
+:root {
+    --blueberry-color:  #6b7a8f;
+    --apricot-color:    #f7882f;
+    --citrus-color:     #f7c331;
+    --apple_core-color: #dcc7aa;
+}
+
+body {
+    color: white;
+    background-color: var(--apple_core-color);
+}
