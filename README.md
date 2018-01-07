@@ -15,4 +15,15 @@ https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-s
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
 How to fork your own repositories
+
 https://www.tilcode.com/fork-your-own-repo-on-github/
+
+Create a new repository on github.com
+
+```
+git clone <repository_url>
+cd <repository_dir>
+git remote add upstream git@github.com:edramir18/bootstraptemplate.git
+git pull upstream master
+git push origin master
+```
