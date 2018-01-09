@@ -20,3 +20,9 @@ The JSON response consist of the following items:
 The documentation to how to create a button for twitter, is available from this link [Twitter Button](https://dev.twitter.com/web/tweet-button/web-intent).
 
 Use the **encodeURIComponent** to encode the qoute for twitter.
+
+## Fonts
+The following fonts from [Google Fonts](https://fonts.google.com) are include in the project
+-[Calligraffitti](https://fonts.google.com/specimen/Calligraffitti)
+-[Dancing Script](https://fonts.google.com/specimen/Dancing+Script)
+

@@ -13,7 +13,7 @@ function updateQuote(){
 			if(json.hasOwnProperty("quote")){				
 				$("#twitter-toolbar a").attr(
 					"href", 
-					"https://twitter.com/intent/tweet?text=" + encodeURIComponent(json.quote + ". " + json.author)
+					"https://twitter.com/intent/tweet?text=" + encodeURIComponent(json.quote + " " + json.author)
 					);
 				$("#cita p:first-child").html(json.quote);
 				$("#autor").html(json.author);

@@ -9,16 +9,22 @@ body {
     color: white;
     background-color: var(--apricot-color);
 }
+.encabezado-font {
+	font-family: 'Dancing Script', cursive;
+}
 .citafondo {	
-	background-color: silver;
+	background-color: var(--apple_core-color);
 	padding: 30px 15px 30px 15px;	
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 #cita {
 	color: var(--blueberry-color);
-	font-size: 2em;
+	font-family: 'Calligraffitti', cursive;
+	font-weight: bold;
+	font-size: 2.5em;
 }
 #autor {
+	font-family: 'Dancing Script', cursive;
 	color: black;
 }
