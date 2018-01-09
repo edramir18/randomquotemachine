@@ -1,29 +1,22 @@
-# bootstraptemplate
-Template for Bootstrap 4, and JQuery 3.2
+# Random Qoute Machine
 
-Include custom color definition on main.css file
+Project for the challenge *Build a random quote machine*.
 
-How to add a ssh key to github
+This project will make use of the API from [Andruxnet](https://market.mashape.com/andruxnet/random-famous-quotes). 
 
-Create the ssh key with the command
-```
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-```
-https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
-https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+You will need to create a account to be able to get a API KEY
 
-How to fork your own repositories
-
-https://www.tilcode.com/fork-your-own-repo-on-github/
-
-Create a new repository on github.com
+The JSON response consist of the following items:
 
 ```
-git clone <repository_url>
-cd <repository_dir>
-git remote add upstream git@github.com:edramir18/bootstraptemplate.git
-git pull upstream master
-git push origin master
+{
+  "quote": "Once you eliminate the impossible, whatever remains, no matter how improbable, must be the truth.",
+  "author": "Sherlock Holmes",
+  "category": "Famous",
+}
 ```
+
+## Creating the Twitter Button
+The documentation to how to create a button for twitter, is available from this link [Twitter Button](https://dev.twitter.com/web/tweet-button/web-intent).
+
+Use the **encodeURIComponent** to encode the qoute for twitter.
