@@ -12,20 +12,30 @@ body {
 .encabezado-font {
 	font-family: 'Dancing Script', cursive;
 }
-.citafondo {	
+.citafondo {
 	background-color: var(--apple_core-color);
 	padding: 30px 15px 30px 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
+@keyframes citaanimation {
+	  0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
 #cita p {
 	color: var(--blueberry-color);
 	font-family: 'Calligraffitti', cursive;	
-	font-weight: normal;	
+	font-weight: normal;
 	font-size: 5vw;
 	margin-left: 15px;
 	margin-right: 15px;
+}
+
+#cita {
+	opacity: 1;	
+	animation: citaanimation 4s ease-out; 
 }
 
 #autor {

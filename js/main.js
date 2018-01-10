@@ -10,11 +10,15 @@ function updateQuote(){
 	    type: "GET",
 		crossDomain: true,
 		success: function (json) {
-			if(json.hasOwnProperty("quote")){				
+			if(json.hasOwnProperty("quote")){
+
 				$("#twitter-toolbar a").attr(
 					"href", 
 					"https://twitter.com/intent/tweet?text=" + encodeURIComponent(json.quote + " " + json.author)
 					);
+				const elm = document.getElementById("cita");
+				const newone = elm.cloneNode(true);
+				elm.parentNode.replaceChild(newone, elm);
 				$("#cita p:first-child").html(json.quote);
 				$("#autor").html(json.author);
 			}
