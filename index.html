@@ -9,35 +9,46 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" >
     <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Dancing+Script" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
+    <main role="main" class="container">
         <h1 class="text-center encabezado-font">Random Quote Machine</h1>
         <div class="row">
             <div class="col">
                 <div class="citafondo">
-                    <blockquote id="cita">
+                    <blockquote id="cita" class="blockquote">
                         <p>Give me a museum and I'll fill it.<p>
-                    </blockquote>
-                    <h4 id="autor" class="text-right display-4">Pablo Picasso</h4>
+                        <footer class="blockqoute-footer text-right"><cite id="autor">Pablo Picasso</cite></footer>
+                    </blockquote>                    
                     <div class="btn-toolbar justify-content-between mt-1 mb-0">
-                        <div id="twitter-toolbar" class="btn-grop">                            
-                            <a href="#" class="btn btn-primary btn-sm" target="_blank"><i class="icon ion-social-twitter"></i> Twitter</a>
+                        <div id="twitter-toolbar" class="btn-grop">
+                            <a href="#" class="btn btn-primary btn-sm" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
                         </div>
                         <div class="btn-grop">
-                            <button id="next-btn" class="btn btn-primary btn-sm">New Qoute</button>
+                            <button id="next-btn" class="btn btn-primary btn-sm">New Quote</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>        
-        <div>
-            <div>
-                <footer>&copy; 2018 Eduardo Ramirez</footer>
-            </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-10">
+                    <span class="text-muted">&copy; 2018 Eduardo Ramirez</span>
+                </div>
+                <div class="col-2">
+                    <div class="btn-group">
+                        <a href="https://github.com/edramir18/randomquotemachine" class="btn btn-primary" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>  
+                    </div>
+                </div>
+            </div>            
         </div>
-    </div>
+    </footer>
     
     <!-- Javascript Library -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
